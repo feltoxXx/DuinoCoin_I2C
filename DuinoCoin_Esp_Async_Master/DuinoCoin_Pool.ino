@@ -6,13 +6,9 @@
   Modified by JK-Rolling
 */
 
-
-
 #include <HTTPClient.h>
 
 #include <WiFiClientSecure.h>
-
-
 
 #include <ArduinoJson.h>
 

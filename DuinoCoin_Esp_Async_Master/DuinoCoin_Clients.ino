@@ -18,7 +18,7 @@
 // Parámetros y definiciones
 // ------------------------------
 #define CLIENTS 30
-#define FIRST_SLAVE 10
+#define FIRST_SLAVE 8
 #define CLIENT_CONNECT_EVERY 30000
 #define CLIENT_TIMEOUT_CONNECTION 50000
 #define CLIENT_TIMEOUT_REQUEST 100
@@ -35,6 +35,8 @@
 
 #define HASHRATE_FORCE false
 #define HASHRATE_SPEED 258.0
+
+#define IS_AVR true    //define if you are using Arduino as slave
 
 
 String host = "162.55.103.174";
@@ -379,6 +381,10 @@ void clients_sendJobDone(byte i) {
     response.print(responseJob);
     int job = getValue(response, SEP_TOKEN, 0).toInt();
     int time = getValue(response, SEP_TOKEN, 1).toInt();
+
+    if (IS_AVR) {
+      time = time * 0.001f;
+    }
 
     // handles less than a millisecond
     if (time == 0) time = 1;

@@ -21,7 +21,7 @@
 
 #define WIRE_CLOCK 400000
 #define WIRE_MAX 30
-#define WIRE_MIN 10
+#define WIRE_MIN 8
 
 void wire_setup()
 {

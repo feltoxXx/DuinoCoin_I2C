@@ -28,9 +28,9 @@ String wire_readLine(int address);
 boolean wire_runEvery(unsigned long interval);
 
 #define MINER "AVR I2C v4.3"
-// #define JOB "AVR"
+#define JOB "AVR"
 // #define JOB "ARM"
-#define JOB "DUE"   // For RP2040 slaves
+// #define JOB "DUE"   // For RP2040 slaves
 
 const char* ssid = " ";
 const char* password = " ";
@@ -38,8 +38,6 @@ const char* ducouser = " ";
 const char* rigIdentifier = "I2C MINER";
 const char* mDNSRigIdentifier = "esp32";
 String mining_key = " ";
-
-#include "freertos/queue.h"
 
 #define REPORT_INTERVAL 60000
 #define CHECK_MINING_KEY false
