@@ -19,7 +19,7 @@ DuinoCoinI2C Version 4.3
 
 All Slaves have the same code and should set the I2C Address for each one.
 
-Testing Code
+Try with the [DuinoCoin_RPI_Tiny_Slave](https://github.com/JK-Rolling/DuinoCoinI2C_RPI/tree/main/DuinoCoin_RPI_Tiny_Slave) sketch
 
 # RP2040 - Slave
 
