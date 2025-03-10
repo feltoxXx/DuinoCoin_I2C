@@ -25,7 +25,7 @@ Try with the [DuinoCoin_RPI_Tiny_Slave](https://github.com/JK-Rolling/DuinoCoinI
 
 RP2040 support dual core dual I2C. Dual core is counted as 2 workers
 
-Testing Code
+Try with the [DuinoCoin_RPI_Pico](https://github.com/feltoxXx/DuinoCoin_I2C/tree/main/workers/RP2040_Code) sketch
 
 # ATTiny - Slave
 
