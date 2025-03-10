@@ -36,7 +36,7 @@
 #define HASHRATE_FORCE false
 #define HASHRATE_SPEED 258.0
 
-#define IS_AVR true    //define if you are using Arduino as slave
+#define IS_AVR false    //define if you are using Arduino as slave
 
 
 String host = "162.55.103.174";
