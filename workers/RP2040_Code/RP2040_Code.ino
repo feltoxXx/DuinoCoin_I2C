@@ -21,8 +21,6 @@
 
 #pragma GCC optimize ("-Ofast")
 
-#pragma GCC optimize ("-Ofast")
-
 #include <Wire.h>
 #include <StreamString.h>     // https://github.com/ricaun/StreamJoin
 #include "pico/mutex.h"
@@ -196,7 +194,6 @@ void single_core_usb_loop(){
 // Core0
 void setup() {
   Serial.begin(115200);
-  Serial.println("nojoda");
 
   // set_sys_clock_khz(50000, true);
   bool print_on_por = true;
@@ -222,8 +219,6 @@ void setup() {
   core_baton = true;
   
   DUCOID = get_DUCOID();
-
-
 
   #ifdef DISABLE_2ND_CORE
     Serial.setTimeout(10000);
